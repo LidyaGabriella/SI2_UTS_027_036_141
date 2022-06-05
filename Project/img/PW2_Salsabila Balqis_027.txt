@@ -1,0 +1,276 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="icon.png">
+    <title>ADNARE</title>
+  </head>
+
+  <!-- Awal Style -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: Viga;
+    }
+    /* Navbar */
+    .navbar-brand {
+        letter-spacing: 3px;
+    }
+    .nav-link {
+        margin-right: 20px; 
+    }
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid white;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    /* Carousel */
+    .carousel-item {
+        max-height: 100vh;
+        background: no-repeat center;
+        background-size: cover;
+    }
+    .carousel-caption{
+        bottom: 200px;
+    }
+
+    /* Teks */
+    .main{
+        min-height: 100vh;
+    }
+    .main img{
+        height: 400px;
+    }
+    @media (min-width: 576px) { 
+      .main{
+          margin-top: 50px;
+      }
+      .main img{
+        padding-top: 30px;
+    }
+    }
+
+    /* Place */
+    #place{
+        min-height: 100vh;
+    }
+    .card{
+        box-shadow: 5px 5px 10px #0d6efd;
+    }
+    @media (min-width: 576px) { 
+        .card{
+            margin-top: 30px;
+        }
+    }
+
+    /* Youtube */
+    #yt{
+        min-height: 100vh;
+    }
+    #yt iframe{
+        height: 300px;
+        width: 500px;
+    }
+    @media (min-width: 992px) { 
+        #yt iframe{
+            min-height: 430px;
+            min-width: 800px;
+        }
+    }
+
+    /* Footer */
+    #footer{
+        max-width: 100%;
+    }
+    .sosmed{
+        list-style: none;
+    }
+    .sosmed li{
+        margin: 0 10px;
+    }
+    .sosmed a{
+        color: white;
+    }
+    .sosmed a:hover i{
+        color: #6610f2;
+    }
+  </style>
+  <!-- Akhir Style -->
+
+  <body>
+    <!-- Awal Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container text-uppercase">
+        <a class="navbar-brand fs-3 fw-bold font-monospace" href="#"> <img src="icon.png" alt="" width="30" height="24">Adnare </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto fs-5">
+            <a class="nav-link active"  href="#">Home</a>
+            <a class="nav-link active" href="#about">About</a>
+            <a class="nav-link active" href="#place">Blog</a>  
+            <a class="nav-link active" href="#yt">Video</a>
+            <a href="#footer" class="btn btn-primary fs-5 text-primary rounded bg-light">Join Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Akir Navbar -->
+
+    <!-- Awal Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="bg-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block ps-6 pe-6">
+            <h5 class="text-uppercase fs-1 fw-bold">Forest</h5>
+            <p class="fs-2">A forest is an area of land dominated by trees.</p>
+            <a href="#" class="btn btn-primary text-uppercase w-auto fs-5 fw-bold mt-3 text-light rounded">Learn More</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="bg-2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block ps-6 pe-6">
+            <h5 class="text-uppercase fs-1 fw-bold">The Sky</h5>
+            <p class="fs-2">The sky is also called celestial dome.</p>
+            <a href="#" class="btn btn-primary text-uppercase w-auto fs-5 fw-bold mt-3 text-light rounded">Learn More</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="bg-3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block ps-6 pe-6">
+            <h5 class="text-uppercase fs-1 fw-bold">Seabed</h5>
+            <p class="fs-2">The seabed is the bottom of the ocean.</p>
+            <a href="#" class="btn btn-primary text-uppercase w-auto fs-5 fw-bold mt-3 text-light rounded">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Akhir Carousel -->
+
+    <!-- Awal Teks -->
+    <section id="about" class="main d-flex align-items-center ms-5 pt-1 pb-0 pe-2 ps-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="main-text">
+              <h2 class="text-uppercase fs-3 fw-bold">This's an Awesome Nature</h2>
+              <p class="fs-5 mt-3 mb-3 me-5">The word nature may refer generally to various types of living plants and animals, and in some cases to processes related to inanimate matter - regarding the existence of certain types of objects and how they change accordingly, such as the weather and geology on Earth, and matter.</p>
+              <a href="#" class="btn btn-primary text-uppercase text-light rounded">Learn More</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <img src="nt.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Teks -->
+
+    <!-- Awal Card -->
+    <section  id="place">
+      <div class="container my-3 py-5 text-center">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-uppercase fs-3 fw-bold mt-4"> Top 3 The Natural Wonders of the World</h1>
+            <p class="mt-3 fs-5 mb-3">This is our version of the natural wonders of the world which we think represent the best of what nature has to offer.</p>
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="card">
+                  <img src="c-1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fs-4 fw-bold">Sahara</h5>
+                    <p class="card-text">The Sahara is the world’s largest hot desert covering most of Northern Africa, making it almost as large as the United States. </p>
+                    <a href="#" class="btn btn-primary text-uppercase text-light rounded">Go There</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="card" >
+                  <img src="c-2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fs-4 fw-bold">Antarctica
+                    </h5>
+                    <p class="card-text">Antarctica, on average, is the coldest, driest, and windiest continent on the planet, and has the highest average elevation of all the continents.</p>
+                    <a href="#" class="btn btn-primary text-uppercase text-light rounded">Go There</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="card" >
+                  <img src="c-3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fs-4 fw-bold">Grand Canyon</h5>
+                    <p class="card-text">The Grand Canyon is located in northern Arizona and offers visitor spectacular vistas that are unmatched throughout in the world.</p>
+                    <a href="#" class="btn btn-primary text-uppercase text-light rounded">Go There</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Card -->
+
+    <!-- Awal Video -->
+    <section  id="yt">
+      <div class="container my-3 py-5 text-center">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-uppercase fs-3 fw-bold mt-4"> The Natural Wonders of the World Video</h1>
+            <p class="mt-3 fs-5 mb-3">This is a wonderful world for those who have eyes to see the beauty and its great variety. </p>
+            <iframe src="https://www.youtube.com/embed/BHACKCNDMW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Video -->
+
+    <!-- Awal Footer -->
+    <footer class="bg-primary text-light pt-2" id="footer">
+      <div class="footer-content d-flex text-center align-items-center flex-column">
+        <h1 class="fs-3 fw-bold">Adventure Nature</h1>
+        <p class="fs-6 lh-lg mt-1 mb-2 w-50">Traveling with Adventure by Nature is not just about the activity, it's about experiencing amazing activities, in stunning natural environments.</p>
+        <ul class="sosmed d-flex mb-6 fs-4">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom text-center">
+        <p class="pb-2 pt-2 mb-0 fs-6">copyright &copy;2021 <span class="text-uppercase">Adnare</span>. Designed by Salsabila</p>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
